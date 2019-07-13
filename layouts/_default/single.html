@@ -11,9 +11,9 @@
           <a href="{{ $.Site.BaseURL }}tags/{{ $v | urlize }}">{{ $v | lower }}</a>{{ if ne (len $.Params.tags) (add $i 1) }}, {{ end }}
         {{ end }}
       {{ end }}
-      <hr>
     </article>
-    {{ with .Site.Params.comments }}
+    <hr>
+    {{ with and (.Site.Params.comments) (ne .Params.comments false) }}
       {{ partial "comments" . }}
     {{ end }}
   </div>

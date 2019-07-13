@@ -4,11 +4,11 @@
     <div>&copy; {{ now.Format "2006" }} &middot; {{ .Site.Params.copyright | markdownify }}</div>
   </div>
   
-  {{ $jquery := resources.Get "js/jquery.min.js" }}
-  {{ $mark := resources.Get "js/jquery.mark.es6.min.js" }}
-  {{ $lunr := resources.Get "js/lunr.min.js" }}
-  {{ $search := resources.Get "js/search.js" }}
-  {{ $js := slice $jquery $mark $lunr $search | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint }}
+  {{- $jquery := resources.Get "js/jquery.min.js" -}}
+  {{- $mark := resources.Get "js/jquery.mark.es6.min.js" -}}
+  {{- $lunr := resources.Get "js/lunr.min.js" -}}
+  {{- $search := resources.Get "js/search.js" -}}
+  {{- $js := slice $jquery $mark $lunr $search | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -17,5 +17,5 @@
   <script>window.jQuery || document.write('<script src="{{ "$jquery" | absURL }}"><\/script>')</script>
   <script src="{{ "js/plugins.js" | absURL }}"></script>
   
-  {{ template "_internal/google_analytics_async.html" . }}
+  {{ template "_internal/google_analytics_async.html" . -}}
 </footer>

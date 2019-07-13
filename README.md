@@ -6,12 +6,13 @@ Hugo theme by [digitalcraftsman](https://github.com/digitalcraftsman). This vers
 
 ## Features
 
+- Light and dark mode toggle
 - Comment system powered by [Utterances](https://utteranc.es/)
 - Easy localization (l10n)
 - Support for RSS feeds
 - Syntax highlighting for source code snippets
 - Social sharing options for blog posts
-- Search engine powered by [lunr.js](https://lunrjs.com/).
+- Search engine powered by [lunr.js](https://lunrjs.com/)
 - Pagination for your blog posts
 - Responsive navbar
 - Call-to-action button shortcode for things like downloads

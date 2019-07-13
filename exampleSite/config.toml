@@ -28,9 +28,8 @@ themesDir = "../.."
     
     # Remove or leave empty to disable comments globally. Add "comments = false" to post front matter to disable on individual posts. Install the Utterances app in your github to enable Utterances comments. For more info and instructions visit, https://utteranc.es/
     # You only need to install the Utterances app to your github repo, everything else has been configured in Flexxy theme. Then add the username and repo below.
-    comments = "GITHUB_USERNAME/REPO"
-    # Removing or leaving empty defaults to "github-light". Other themes: github-dark, github-dark-orange, icy-dark, dark-blue, photon-dark
-    comments_theme = "github-light"
+    # Example: (comments = "GITHUB_USERNAME/REPO")
+    comments = ""
     
     custom_css = []
     custom_js  = []

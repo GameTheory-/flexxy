@@ -158,7 +158,7 @@ const renderResults = (results) => {
   results.slice(0, MAX_PAGES).forEach((result, idx) => {
     const $searchResultPage = $('<div class="searchResultPage">')
 
-    $searchResultPage.append('<a class="searchResultTitle" href="' + result.ref + '">' + result.title + '</a>')
+    $searchResultPage.append('<h2><a class="searchResultTitle" href="' + result.ref + '">' + result.title + '</a></h2>')
     
     if (result.cats != null) {
       $searchResultPage.append('<div class="searchResultBody">' + 'Categories: ' + result.cats + '</div>')
