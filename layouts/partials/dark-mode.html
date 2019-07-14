@@ -7,14 +7,14 @@ function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
-    {{ with and (.Site.Params.comments) (ne .Params.comments false) }}
-    document.location.reload(true)
+    {{ with and (.Site.Params.comments) (ne .Params.comments false) (eq .Section "post") }}
+      document.location.reload(true)
     {{ end }}
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.removeItem('theme');
-    {{ with and (.Site.Params.comments) (ne .Params.comments false) }}
-    document.location.reload(true)
+    {{ with and (.Site.Params.comments) (ne .Params.comments false) (eq .Section "post") }}
+      document.location.reload(true)
     {{ end }}
   }
 }
@@ -25,8 +25,8 @@ if (currentTheme) {
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true;
   }
-  {{ with and (.Site.Params.comments) (ne .Params.comments false) }}
-  myScript.setAttribute('theme', 'github-dark');
+  {{ with and (.Site.Params.comments) (ne .Params.comments false) (eq .Section "post") }}
+    myScript.setAttribute('theme', 'github-dark');
   {{ end }}
 }
 </script>
