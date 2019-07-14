@@ -53,6 +53,8 @@ example: var(--color-primary)
   --searchresults-mark: #dddfdf;
   --social-icon: #bbbbbb;
   --social-icon-hover: #222222;
+  --cookie-bg: #edeff5;
+  --cookie-font: #838391;
 }
 
 [data-theme="dark"] {
@@ -71,6 +73,8 @@ example: var(--color-primary)
   --searchresults-mark: #a9a9a9;
   --social-icon: #707070;
   --social-icon-hover: #bbbbbb;
+  --cookie-bg: #444444;
+  --cookie-font: #c9c9c9;
 }
 
 /* HTML5 display definitions

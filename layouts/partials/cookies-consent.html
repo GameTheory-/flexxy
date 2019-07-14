@@ -5,13 +5,18 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#edeff5",
-      "text": "#838391"
+      "background": "var(--cookie-bg)",
+      "text": "var(--cookie-font)"
     },
     "button": {
       "background": "var(--color-primary)",
       "hover": "var(--color-secondary)"
     }
+  },
+  "theme": "classic",
+  "position": "bottom-left",
+  "content": {
+    "dismiss": "Close"
   }
 })});
 </script>
