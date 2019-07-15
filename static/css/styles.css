@@ -1178,8 +1178,7 @@ body.post-template .site-header h2 .logo {
 
 /* Dark mode theme switcher */
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
+  float: left;
   margin-left: 20px;
   margin-top: 12px;
 }
