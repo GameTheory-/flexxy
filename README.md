@@ -17,6 +17,7 @@ Hugo theme by [digitalcraftsman](https://github.com/digitalcraftsman). This vers
 - Responsive navbar
 - Call-to-action button shortcode for things like downloads
 - Image modal shortcode to display blog image previews & enlarge on click
+- Show/Hide shortcode
 - Back-to-top button
 - Looks great on desktop and mobile
 - Footer copyright updates automatically each year on Jan 1st
@@ -98,6 +99,15 @@ The image shortcode can be used to display an image thumbnail in your posts list
 Note: The alt tag also serves as title.
 
 [Here's a blog post with example usage](https://github.com/GameTheory-/flexxy/blob/master/exampleSite/content/post/migrate-from-jekyll.md).
+
+**Show/Hide shortcode example:**
+
+```go
+{{% hide "My Hugo Experience" %}}
+Your Hugo experience...
+More of your Hugo experience.
+{{% /hide %}}
+```
 
 ## Syntax Highlighting
 
