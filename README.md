@@ -99,6 +99,21 @@ Note: The alt tag also serves as title.
 
 [Here's a blog post with example usage](https://github.com/GameTheory-/flexxy/blob/master/exampleSite/content/post/migrate-from-jekyll.md).
 
+## Syntax Highlighting
+
+Here's some sample code for html syntax highlighting. This sample results in a code block with line numbers.
+
+```html
+{{< highlight html "linenos=table" >}}
+<div class="theme">
+  <button value="dark">Dark</button>
+  <button value="light">Light</button>
+</div>
+{{< /highlight >}}
+```
+
+For more info and samples visit [hugo syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
+
 ## Localization (l10n)
 
 Localization allows you to easily translate all strings in your website.

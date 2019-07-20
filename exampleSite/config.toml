@@ -1,6 +1,8 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "John Doe's blog"
+# For syntax highlighting in code blocks
+pygmentsUseClasses = true
 # Define how many posts appear per page
 paginate = 8
 # Enable google analytics by entering your tracking code
@@ -12,7 +14,7 @@ themesDir = "../.."
 
 [params]
     site_author = "John Doe"
-    site_description = "The awesome blog of John Doe."    
+    site_description = "The awesome blog of John Doe."
     # Leave empty to disable header image
     header_background = "img/desk.jpg"
     # Leave empty to remove it
