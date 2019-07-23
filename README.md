@@ -113,12 +113,22 @@ More of your Hugo experience.
 
 Here's some sample code for html syntax highlighting. This sample results in a code block with line numbers.
 
+**Multi-line (with line numbers):**
+
 ```html
 {{< highlight html "linenos=table" >}}
 <div class="theme">
   <button value="dark">Dark</button>
   <button value="light">Light</button>
 </div>
+{{< /highlight >}}
+```
+
+**Single-line (no line numbers):**
+
+```html
+{{< highlight html }}
+<meta charset="utf-8">
 {{< /highlight >}}
 ```
 

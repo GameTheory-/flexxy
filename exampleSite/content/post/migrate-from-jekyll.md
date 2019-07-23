@@ -37,10 +37,12 @@ Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters
 The default is for Jekyll to publish to `_site` and for Hugo to publish to `public`. If, like me, you have [`_site` mapped to a git submodule on the `gh-pages` branch](http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html), you'll want to do one of two alternatives:
 
 1. Change your submodule to point to map `gh-pages` to public instead of `_site` (recommended).
-  {{< highlight bash "linenos=table" >}}
+{{< highlight bash "linenos=table" >}}
 git submodule deinit _site
 git rm _site
-git submodule add -b gh-pages git@github.com:your-username/your-repo.git public{{< /highlight >}}
+git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+{{< /highlight >}}
+
 2. Or, change the Hugo configuration to use `_site` instead of `public`.
 {{< highlight json "linenos=table" >}}
 {
@@ -145,14 +147,14 @@ is written as this Hugo shortcode:
 ### Usage
 I simply changed:
 
-{{< highlight go "linenos=table" >}}
- {% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg "One of my favorite touristy-type photos. I secretly waited for the good light while we were "having fun" and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing." ->http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+{{< highlight go >}}
+{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg "One of my favorite touristy-type photos. I secretly waited for the good light while we were "having fun" and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing." ->http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
 {{< /highlight >}}
 
 to this (this example uses a slightly extended version named `fig`, different than the built-in `figure`):
 
-{{< highlight go "linenos=table" >}}
- {{%/* fig class="full" src="http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg" title="One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing." link="http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/" */%}}
+{{< highlight go >}}
+{{%/* fig class="full" src="http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg" title="One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing." link="http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/" */%}}
 {{< /highlight >}}
 
 As a bonus, the shortcode named parameters are, arguably, more readable.
