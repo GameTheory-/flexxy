@@ -5,14 +5,15 @@ title = "John Doe's blog"
 pygmentsUseClasses = true
 # Define how many posts appear per page
 paginate = 8
-# Enable google analytics by entering your tracking code
-googleAnalytics = ""
 theme = "flexxy"
 
 # Remove this line if you use this theme for a real website. This line is only to preview the theme within the exampleSite folder with the hugo server command.
 themesDir = "../.."
 
 [params]
+    # Enable google analytics by entering your tracking code
+    # Example tracking code: UA-114000097-3
+    googleAnalytics = ""
     site_author = "John Doe"
     site_description = "The awesome blog of John Doe."
     # Leave empty to disable header image
