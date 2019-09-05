@@ -37,14 +37,14 @@ Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters
 The default is for Jekyll to publish to `_site` and for Hugo to publish to `public`. If, like me, you have [`_site` mapped to a git submodule on the `gh-pages` branch](http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html), you'll want to do one of two alternatives:
 
 1. Change your submodule to point to map `gh-pages` to public instead of `_site` (recommended).
-{{< highlight bash "linenos=table" >}}
+{{< highlight bash >}}
 git submodule deinit _site
 git rm _site
 git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
 {{< /highlight >}}
 
 2. Or, change the Hugo configuration to use `_site` instead of `public`.
-{{< highlight json "linenos=table" >}}
+{{< highlight json >}}
 {
     ..
     "publishdir": "_site",
@@ -65,7 +65,7 @@ As an example, I was using a custom [`image_tag`](https://github.com/alexandre-n
 
 Jekyll's plugin:
 
-{{< highlight html "linenos=table" >}}
+{{< highlight html >}}
 module Jekyll
   class ImageTag < Liquid::Tag
     @url = nil
@@ -123,7 +123,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
 is written as this Hugo shortcode:
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go >}}
 <!-- image -->
 <figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
   {{ with .Get "link"}}<a href="{{.}}">{{ end }}

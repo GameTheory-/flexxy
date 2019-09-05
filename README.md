@@ -111,20 +111,16 @@ More of your Hugo experience.
 
 ## Syntax Highlighting
 
-Here's some sample code for html syntax highlighting. This sample results in a code block with line numbers.
-
-**Multi-line (with line numbers):**
+Here's some sample code for html syntax highlighting.
 
 ```html
-{{< highlight html "linenos=table" >}}
+{{< highlight html >}}
 <div class="theme">
   <button value="dark">Dark</button>
   <button value="light">Light</button>
 </div>
 {{< /highlight >}}
 ```
-
-**Single-line (no line numbers):**
 
 ```html
 {{< highlight html }}
