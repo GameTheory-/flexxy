@@ -4,6 +4,10 @@ Flexxy is a responsive theme with a focus on blogging based on the
 [Minimalist](https://github.com/digitalcraftsman/hugo-minimalist-theme)
 Hugo theme by [digitalcraftsman](https://github.com/digitalcraftsman). This version has been updated with many new features to accomodate the more demanding bloggers. It has also been updated to the newer [base and block constructs](https://gohugo.io/templates/base/).
 
+## See Flexxy in Action
+
+<https://techstop.github.io/>
+
 ## Features
 
 - Light and dark mode toggle
